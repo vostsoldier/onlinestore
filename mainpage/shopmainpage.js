@@ -1,4 +1,4 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let total = 0;
 
 function addToCart(id, name, price) {
@@ -9,6 +9,7 @@ function addToCart(id, name, price) {
         cart.push({ id, name, price, quantity: 1 });
     }
     updateCart();
+    localStorage.setItem('cart', JSON.stringify(cart)); // Save cart to localStorage
 }
 
 function updateCart() {
@@ -16,7 +17,7 @@ function updateCart() {
     const cartCount = document.getElementById("cart-count");
     const cartTotal = document.getElementById("cart-total");
     const cartSubtotal = document.getElementById("cart-subtotal");
-    
+
     cartItems.innerHTML = '';
     total = 0;
 
@@ -30,14 +31,20 @@ function updateCart() {
     cartCount.innerText = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartTotal.innerText = total.toFixed(2);
     cartSubtotal.innerText = total.toFixed(2);
+
+    // Save updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function checkout() {
-    alert(`Thank you for your purchase! Your total is $${total.toFixed(2)}`);
-    cart = [];
-    updateCart();
+    // Save the cart to localStorage before redirecting
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    // Redirect to the cart page
+    window.location.href = 'shoppingcart.html';
 }
 
 function scrollToProducts() {
     document.getElementById("product-list").scrollIntoView({ behavior: 'smooth' });
 }
+
