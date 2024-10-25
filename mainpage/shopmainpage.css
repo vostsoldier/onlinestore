@@ -2,6 +2,7 @@
     box-sizing: border-box; 
 }
 
+
 html, body {
     height: 100%;
     margin: 0;
@@ -9,15 +10,42 @@ html, body {
     flex-direction: column;
 }
 
+
 body {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+
+#product-list {
+    flex: 1; 
+    margin: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #777777;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0; 
+    margin-top: auto; 
+}
+
+body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #777777;
     background-color: #CCCCCC;
 }
 
 header {
+    background-color: #777777;
     background-color: #333;
     color: white;
     padding: 10px;
@@ -34,6 +62,10 @@ header nav ul {
     gap: 20px;
 }
 
+header nav ul li {
+    display: inline;
+}
+
 header nav ul li a {
     color: white;
     text-decoration: none;
@@ -46,12 +78,24 @@ header nav ul li a:hover {
 
 #hero {
     background-color: #777777;
+    background-size: cover;
+    background-position: center;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 #hero button {
@@ -61,51 +105,53 @@ header nav ul li a:hover {
     border: none;
     cursor: pointer;
     font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#hero button:hover {
+    background-color: #ff4500;
 }
 
 #product-list {
+    background-color: #CCCCCC; 
     padding: 20px;
     border-radius: 8px; 
+    margin: 0; 
     margin-bottom: 30px;
-    max-width: 1200px;
     width: 100%; 
+    height: 800px;
     box-sizing: border-box;
     text-align: center; 
-    margin: 0 auto;
 }
 
+
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 50px; 
 }
 
 .product {
-    position: relative;
     background-color: white;
     border-radius: 8px;
-    border: 1px solid black;
+    border-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-align: center;
-    overflow: hidden;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    height: 375px;
+    width: 300px;
 }
-
-.product-content {
-    position: relative;
-}
-
 
 .product:hover {
     transform: scale(1.08);
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    max-width: 200px;
-    margin: 0 auto;
 }
 
 button {
@@ -138,31 +184,54 @@ footer .social-media a:hover {
     text-decoration: underline;
 }
 
-.description-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+.cart-container {
+    position: absolute; 
+    top: 10px; 
+    right: 50px; 
+    top: -3px; 
+    right: 35px; 
+}
+
+#cart-button {
+    background-color: red; 
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 8px;
-    z-index: 1; /* Ensure it stays above other elements */
+    border: none;
+    cursor: pointer;
 }
 
-/* Show overlay when hovering over the product content, excluding the button */
-.product-content:hover .description-overlay {
-    opacity: 1;
+#cart-button:hover {
+    background-color: darkred; 
 }
 
-.product-content button {
-    position: relative; /* Maintain button's position */
-    z-index: 2; /* Keep the button above the overlay */
+.cart-dropdown {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    padding: 20px;
+    right: 0;
+    z-index: 1;
+    display: none; 
+}
+
+.cart-container:hover .cart-dropdown {
+    display: block; 
+}
+
+.cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.cart-dropdown li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.cart-dropdown p {
+    font-weight: bold;
 }
