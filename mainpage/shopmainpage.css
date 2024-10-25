@@ -16,7 +16,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #CCCCCC;
+    background-color: #E0E7F1;
     box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 footer {
-    background-color: #333;
+    background-color: #4C5B70;
     color: white;
     padding: 10px;
     text-align: center;
@@ -38,7 +38,7 @@ footer {
 }
 
 header {
-    background-color: #333;
+    background-color: #4C5B70;
     color: white;
     padding: 10px;
     text-align: center;
@@ -69,7 +69,7 @@ header nav ul li a:hover {
 }
 
 #hero {
-    background-color: #777777;
+    background-color: #9BA4B5;
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 }
 
 #hero button {
-    background-color: #ff6347;
+    background-color: #A0B0A8;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -101,11 +101,11 @@ header nav ul li a:hover {
 }
 
 #hero button:hover {
-    background-color: #ff4500;
+    background-color: #A0B0A8;
 }
 
 #product-list {
-    background-color: #CCCCCC; 
+    background-color: #E0E7F1; 
     padding: 20px;
     border-radius: 8px; 
     margin: 0; 
@@ -124,7 +124,7 @@ header nav ul li a:hover {
 }
 
 .product {
-    position: relative; /* Positioning for overlay */
+    position: relative;
     background-color: white;
     border-radius: 8px;
     border-color: black;
@@ -146,7 +146,7 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
-/* Hidden description overlay */
+
 .product-description {
     position: absolute;
     top: 0;
@@ -171,7 +171,7 @@ header nav ul li a:hover {
 }
 
 button {
-    background-color: #333;
+    background-color: #4C5B70;
     color: white;
     padding: 10px;
     border: none;
@@ -182,7 +182,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #1E2A38;
 }
 
 footer .social-media a {
@@ -202,7 +202,7 @@ footer .social-media a:hover {
 }
 
 #cart-button {
-    background-color: red; 
+    background-color: #A0B0A8; 
     color: white;
     padding: 10px;
     border: none;
@@ -230,7 +230,7 @@ footer .social-media a:hover {
 }
 
 .cart-dropdown ul {
-    list-style: none; /* Full specification here */
+    list-style: none;
     padding: 0;
     margin: 0 0 10px 0;
 }
