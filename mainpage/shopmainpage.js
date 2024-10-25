@@ -39,8 +39,6 @@ function updateCart() {
 function checkout() {
     // Save the cart to localStorage before redirecting
     localStorage.setItem('cart', JSON.stringify(cart));
-    
-    // Redirect to the cart page
     window.location.href = 'shoppingcart.html';
 }
 
