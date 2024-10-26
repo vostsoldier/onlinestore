@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E0E7F1; /* Updated to match first code */
+    background-color: #E0E7F1; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #4C5B70; /* Updated to match first code */
+    background-color: #4C5B70; 
     color: white;
     padding: 15px;
     text-align: center;
@@ -30,7 +30,7 @@ main {
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
-    background-color: #ffffff; /* Kept white for readability */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ main {
 .cart-items {
     flex: 3;
     padding: 10px;
-    background-color: #f9f9f9; /* Light color similar to original */
+    background-color: #f9f9f9; 
     border-radius: 8px;
 }
 
@@ -76,7 +76,7 @@ main {
 .cart-summary {
     flex: 1;
     margin-left: 20px;
-    background-color: #f1f1f1; /* Light color similar to original */
+    background-color: #f1f1f1; 
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -87,7 +87,7 @@ main {
 }
 
 #checkout-button {
-    background-color: #A0B0A8; /* Updated to match button color from first code */
+    background-color: #A0B0A8; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -97,11 +97,11 @@ main {
 }
 
 #checkout-button:hover {
-    background-color: #ff6347; /* Added darker hover effect */
+    background-color: #ff6347;
 }
 
 footer {
-    background-color: #4C5B70; /* Updated to match first code */
+    background-color: #4C5B70;
     color: white;
     padding: 10px;
     text-align: center;
