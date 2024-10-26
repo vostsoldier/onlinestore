@@ -78,6 +78,8 @@ header nav ul li a:hover {
     align-items: center;
     color: white;
     text-align: center;
+    margin: 0;
+    width: 100%;
 }
 
 #hero h2 {
@@ -243,4 +245,12 @@ footer .social-media a:hover {
 
 .cart-dropdown p {
     font-weight: bold;
+}
+
+.promo-header {
+    background-color: #4C5B70;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
 }
