@@ -194,6 +194,13 @@ button {
 button:hover {
     background-color: #1E2A38;
 }
+.shop-button {
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+}
+.shop-button:hover {
+    transform: scale(1.08);
+}
 
 footer .social-media a {
     color: white;
@@ -217,10 +224,13 @@ footer .social-media a:hover {
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
 }
 
 #cart-button:hover {
     background-color: darkred; 
+    transform: scale(1.1);
 }
 
 .cart-dropdown {
