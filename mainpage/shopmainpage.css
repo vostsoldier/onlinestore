@@ -42,7 +42,8 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    height: 100px;
+    height: 6%;
+    min-height: 6%;
 }
 .nav-header {
     min-height: 50px;
@@ -271,4 +272,54 @@ footer .social-media a:hover {
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    /* Stack nav items vertically */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    #hero {
+        height: 300px;
+        padding: 20px;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
 }
