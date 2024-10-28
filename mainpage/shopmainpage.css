@@ -239,7 +239,8 @@ footer .social-media a:hover {
     background-color: white;
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 280px;
+    min-width: 300px; /* Ensures a minimum width for dropdown */
+    max-width: 350px; /* Limits the width to prevent excessive expansion */
     padding: 15px;
     right: 0;
     z-index: 1;
@@ -253,15 +254,16 @@ footer .social-media a:hover {
 .cart-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    gap: 5px;
+    align-items: center; /* Center-aligns content */
+    justify-content: space-between;
+    width: 120px; /* Adjust width to provide more space */
+    margin: 5px;
 }
 .cart-item-details {
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 100%; /* Prevents items from expanding too far horizontally */
 }
 .cart-item-image {
     width: 50px;
@@ -272,6 +274,9 @@ footer .social-media a:hover {
 .cart-item-info {
     flex: 1;
     font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 .cart-dropdown ul {
     list-style: none;
@@ -280,8 +285,10 @@ footer .social-media a:hover {
 }
 .cart-item-quantity {
     display: flex;
-    align-items: center;
+    flex-direction: row; /* Aligns buttons side-by-side */
     gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 .cart-dropdown li {
     margin-bottom: 10px;
@@ -325,54 +332,4 @@ footer .social-media a:hover {
     padding: 10px;
     text-align: center;
     font-size: 0.9rem;
-}
-@media (max-width: 600px) {
-    /* Stack nav items vertically */
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    header nav ul li a {
-        font-size: 16px;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Hero Section - */
-    #hero {
-        height: 300px;
-        padding: 20px;
-    }
-
-    #hero h2 {
-        font-size: 2rem;
-    }
-
-    #hero p {
-        font-size: 1rem;
-    }
-
-    #hero button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    /* Product Grid */
-    .product-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .product {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    /* Footer */
-    footer {
-        padding: 15px;
-        font-size: 0.8rem;
-    }
 }
