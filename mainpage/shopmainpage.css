@@ -240,7 +240,7 @@ footer .social-media a:hover {
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-width: 300px; /* Ensures a minimum width for dropdown */
-    max-width: 350px; /* Limits the width to prevent excessive expansion */
+    max-width: 600px; /* Limits the width to prevent excessive expansion */
     padding: 15px;
     right: 0;
     z-index: 1;
@@ -285,7 +285,6 @@ footer .social-media a:hover {
 }
 .cart-item-quantity {
     display: flex;
-    flex-direction: row; /* Aligns buttons side-by-side */
     gap: 5px;
     align-items: center;
     justify-content: center;
