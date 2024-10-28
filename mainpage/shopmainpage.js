@@ -1,6 +1,6 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let total = 0;
-let uniqueProductCount = cart.length; 
+let uniqueProductCount = cart.length;
 
 function addToCart(id, name, price) {
     const item = cart.find(product => product.id === id);
@@ -8,11 +8,21 @@ function addToCart(id, name, price) {
         item.quantity++;
     } else {
         cart.push({ id, name, price, quantity: 1 });
-        uniqueProductCount++; 
-        updateCartWidth(); 
+        uniqueProductCount++;
+        updateCartWidth();
     }
     updateCart();
-    localStorage.setItem('cart', JSON.stringify(cart)); 
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function updateCartWidth() {
+    const cartDropdown = document.querySelector(".cart-dropdown");
+    const baseWidth = 300; // Base width for initial items
+    const widthIncrement = 100; // Width increase per unique product, up to maxWidth
+    const maxWidth = 600;
+
+    const newWidth = Math.min(baseWidth + (uniqueProductCount * widthIncrement), maxWidth);
+    cartDropdown.style.width = `${newWidth}px`;
 }
 
 function updateCart() {
@@ -29,7 +39,7 @@ function updateCart() {
         li.classList.add("cart-item");
 
         li.innerHTML = `
-            <span class="item-name">${item.name}</span> 
+            <span class="item-name">${item.name}</span>
             <span class="item-price"> - $${(item.price * item.quantity).toFixed(2)}</span>
             <div class="quantity-controls">
                 <button onclick="decreaseQuantity(${item.id})">-</button>
@@ -38,7 +48,7 @@ function updateCart() {
                 <button onclick="removeItem(${item.id})">Remove</button>
             </div>
         `;
-        
+
         cartItems.appendChild(li);
         total += item.price * item.quantity;
     });
@@ -48,15 +58,6 @@ function updateCart() {
     cartSubtotal.innerText = total.toFixed(2);
 
     localStorage.setItem('cart', JSON.stringify(cart));
-}
-
-function updateCartWidth() {
-    const cartDropdown = document.querySelector(".cart-dropdown");
-    const baseWidth = 300; 
-    const itemWidth = 80; 
-    const newWidth = baseWidth + Math.min(uniqueProductCount * itemWidth, 600); 
-
-    cartDropdown.style.width = `${newWidth}px`;
 }
 
 function increaseQuantity(id) {
@@ -73,7 +74,7 @@ function decreaseQuantity(id) {
         item.quantity--;
         updateCart();
     } else if (item && item.quantity === 1) {
-        removeItem(id); 
+        removeItem(id);
     }
 }
 
@@ -81,15 +82,10 @@ function removeItem(id) {
     const itemIndex = cart.findIndex(product => product.id === id);
     if (itemIndex > -1) {
         cart.splice(itemIndex, 1);
-        uniqueProductCount--; 
-        updateCartWidth(); 
+        uniqueProductCount--;
+        updateCartWidth();
         updateCart();
     }
-}
-
-function removeItem(id) {
-    cart = cart.filter(product => product.id !== id);
-    updateCart();
 }
 
 function checkout() {
