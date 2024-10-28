@@ -214,13 +214,13 @@ footer .social-media a:hover {
 }
 
 .cart-container {
-    position: absolute; 
-    top: 0px; 
-    right: 25px; 
+    position: absolute;
+    top: 0px;
+    right: 25px;
 }
 
 #cart-button {
-    background-color: #A0B0A8; 
+    background-color: #A0B0A8;
     color: white;
     padding: 10px;
     border: none;
@@ -230,7 +230,7 @@ footer .social-media a:hover {
 }
 
 #cart-button:hover {
-    background-color: darkred; 
+    background-color: darkred;
     transform: scale(1.1);
 }
 
@@ -246,13 +246,15 @@ footer .social-media a:hover {
     z-index: 1;
     display: block;
     border-radius: 8px;
-    opacity: 0; /* Hidden initially */
-    transform: translateY(-10px); /* Starts slightly above */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    opacity: 0;
+    visibility: hidden; 
+    transform: translateY(-10px);
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; 
 }
 #cart-button:hover + .cart-dropdown {
-    opacity: 1; /* Fades in */
-    transform: translateY(0); /* Slides down into view */
+    opacity: 1; 
+    transform: translateY(0);
 }
 
 .cart-item {
@@ -327,6 +329,15 @@ footer .social-media a:hover {
 }
 .cart-dropdown p {
     font-weight: bold;
+}
+.cart-container:hover .cart-dropdown,
+#cart-button:hover + .cart-dropdown,
+.cart-dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto; 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0s; 
 }
 
 .promo-header {
