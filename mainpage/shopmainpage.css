@@ -239,31 +239,35 @@ footer .social-media a:hover {
     background-color: white;
     color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-width: 300px; /* Ensures a minimum width for dropdown */
-    max-width: 600px; /* Limits the width to prevent excessive expansion */
+    min-width: 300px;
+    max-width: 600px;
     padding: 15px;
     right: 0;
     z-index: 1;
-    display: none;
+    display: block;
     border-radius: 8px;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(-10px); /* Starts slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+#cart-button:hover + .cart-dropdown {
+    opacity: 1; /* Fades in */
+    transform: translateY(0); /* Slides down into view */
 }
 
-.cart-container:hover .cart-dropdown {
-    display: block; 
-}
 .cart-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-aligns content */
+    align-items: center; 
     justify-content: space-between;
-    width: 120px; /* Adjust width to provide more space */
+    width: 120px; 
     margin: 5px;
 }
 .cart-item-details {
     display: flex;
     align-items: center;
     gap: 10px;
-    max-width: 100%; /* Prevents items from expanding too far horizontally */
+    max-width: 100%; 
 }
 .cart-item-image {
     width: 50px;
@@ -275,8 +279,8 @@ footer .social-media a:hover {
     flex: 1;
     font-size: 0.9rem;
     overflow: hidden;
-    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
-    white-space: nowrap; /* Prevents text from wrapping */
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 .cart-dropdown ul {
     list-style: none;

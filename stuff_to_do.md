@@ -1,8 +1,7 @@
 *** READ THIS ***
 MAKE THESE CHANGES!!!
 IT IS IN ORDER OF PRIORITY
--FIX SHOPPING CART BUG
--FIX MEDIA BUGS - footer should be in the bottom and top should be spaced out...
+-Make a animation for opening shopping cart and make it better looking
+-Create media - so that it works on the phone
 -Fill empty space with something and make bigger font
--Change color of shopping page to match the main page
 -Create about page?

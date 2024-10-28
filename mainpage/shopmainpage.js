@@ -1,6 +1,6 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let total = 0;
-let uniqueProductCount = cart.length; // Initialize with number of unique products
+let uniqueProductCount = cart.length; 
 
 function addToCart(id, name, price) {
     const item = cart.find(product => product.id === id);
@@ -8,8 +8,8 @@ function addToCart(id, name, price) {
         item.quantity++;
     } else {
         cart.push({ id, name, price, quantity: 1 });
-        uniqueProductCount++; // Only increase unique product count when adding a new product
-        updateCartWidth(); // Update the width for new products only
+        uniqueProductCount++; 
+        updateCartWidth(); 
     }
     updateCart();
     localStorage.setItem('cart', JSON.stringify(cart)); 
@@ -52,11 +52,9 @@ function updateCart() {
 
 function updateCartWidth() {
     const cartDropdown = document.querySelector(".cart-dropdown");
-    const baseWidth = 300; // Minimum width of the cart
-    const itemWidth = 80; // Width increase per unique product
-
-    // Calculate new width based on the number of unique products
-    const newWidth = baseWidth + Math.min(uniqueProductCount * itemWidth, 600); // Limit width growth
+    const baseWidth = 300; 
+    const itemWidth = 80; 
+    const newWidth = baseWidth + Math.min(uniqueProductCount * itemWidth, 600); 
 
     cartDropdown.style.width = `${newWidth}px`;
 }
@@ -83,8 +81,8 @@ function removeItem(id) {
     const itemIndex = cart.findIndex(product => product.id === id);
     if (itemIndex > -1) {
         cart.splice(itemIndex, 1);
-        uniqueProductCount--; // Decrease unique product count when removing an item
-        updateCartWidth(); // Adjust width after removing a unique product
+        uniqueProductCount--; 
+        updateCartWidth(); 
         updateCart();
     }
 }
