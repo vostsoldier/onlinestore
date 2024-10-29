@@ -1,8 +1,7 @@
 *** READ THIS ***
 MAKE THESE CHANGES!!!
 IT IS IN ORDER OF PRIORITY
--Make checkout drop down better looking + spaced out
--Make the home button actaully work
--Create media - so that it works on the phone
+-Fix shopping cart - Make it so that it expands
+-FIX MEDIA BUGS - footer should be in the bottom and top should be spaced out...
 -Fill empty space with something and make bigger font
 -Create about page?
