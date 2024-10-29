@@ -538,3 +538,115 @@ footer .social-media a:hover {
 .sidebar button:hover {
     background-color: #1E2A38;
 }
+@media (max-width: 768px) {
+    /* Remove default margins and set full-width */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Full-width header and navigation adjustments */
+    .nav-header {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero section full-width */
+    #hero {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #hero p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #hero button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Product grid adjustments for full width */
+    .product-grid,
+    .seasonal-product-grid {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .product,
+    .seasonal-product-grid .product {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* Cart dropdown full width */
+    .cart-dropdown {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* Footer adjustments */
+    footer {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        bottom: 0;
+        position: relative; 
+        margin-top: auto;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Sidebar adjustments */
+    .sidebar {
+        width: 100%;
+        padding: 15px 10px;
+        box-sizing: border-box;
+        margin-top: 20px;
+    }
+
+    .sidebar button {
+        font-size: 0.9rem;
+        padding: 8px;
+        width: 100%;
+    }
+}
