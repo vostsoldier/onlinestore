@@ -372,3 +372,127 @@ footer .social-media a:hover {
     color: #333;
     line-height: 1.6;
 }
+#fall-seasonal {
+    background-color: #FFE4C4;
+    padding: 60px 20px;
+    text-align: left;
+    color: #8B4513;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); 
+    padding: 60px 5%;
+}
+
+#fall-seasonal .fall-content {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+#fall-seasonal h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#fall-seasonal .fall-description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 800px;
+    color: #4C5B70;
+}
+
+.seasonal-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seasonal-product-grid .product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    width: 280px;
+    position: relative;
+}
+
+.seasonal-product-grid .product:hover {
+    transform: scale(1.08);
+}
+
+.seasonal-product-grid .product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.seasonal-product-grid .product-description {
+    background-color: rgba(255, 165, 0, 0.9);
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.seasonal-product-grid .product:hover .product-description {
+    opacity: 1;
+}
+#fall-seasonal {
+    background-color: #F5E6D3;
+    padding: 40px 20px;
+    margin: 20px auto; /* This centers the element and removes equal space on both sides */
+    max-width: 90%; /* This controls the maximum width */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.fall-seasonal-content {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.fall-content {
+    flex: 1;
+    text-align: left;
+}
+
+.fall-content h2 {
+    font-size: 2.5rem;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.fall-content p {
+    font-size: 1.2rem;
+    color: #5A3A2C;
+    line-height: 1.6;
+}
+
+.seasonal-product-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
