@@ -451,8 +451,8 @@ footer .social-media a:hover {
 #fall-seasonal {
     background-color: #F5E6D3;
     padding: 40px 20px;
-    margin: 20px auto; /* This centers the element and removes equal space on both sides */
-    max-width: 90%; /* This controls the maximum width */
+    margin: 20px auto; 
+    max-width: 90%; 
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -495,4 +495,46 @@ footer .social-media a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
     text-align: center;
+}
+.sidebar {
+    width: 250px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* or use relative for inline */
+    left: 0; /* position it on the right */
+    top: 100px; /* adjust the vertical position */
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #4C5B70;
+}
+
+.sidebar p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.sidebar input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4C5B70;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background-color: #1E2A38;
 }
