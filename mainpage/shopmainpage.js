@@ -18,8 +18,8 @@ function addToCart(id, name, price) {
 function updateCartWidth() {
     const cartDropdown = document.querySelector(".cart-dropdown");
     const baseWidth = 300; 
-    const widthIncrement = 100; 
-    const maxWidth = 600;
+    const widthIncrement = 150; 
+    const maxWidth = 900;
 
     const newWidth = Math.min(baseWidth + (uniqueProductCount * widthIncrement), maxWidth);
     cartDropdown.style.width = `${newWidth}px`;

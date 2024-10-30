@@ -173,6 +173,9 @@ header nav ul li a:hover {
     background-color: #ccb9a1;
     transform: scale(1.08);
 }
+.oregon img {
+    border-radius: 8px;
+}
 
 .misty button {
     background-color: #FFFFFF; 
@@ -185,7 +188,9 @@ header nav ul li a:hover {
     background-color: #d7d3d3;
     transform: scale(1.08);
 }
-
+.misty img {
+    border-radius: 8px;
+}
 .sunset button {
     background-color: #FFDA8B; 
     color: #5C3B20;
@@ -195,6 +200,9 @@ header nav ul li a:hover {
 .sunset button:hover {
     background-color: #f2c76b;
     transform: scale(1.08);
+}
+.sunset img {
+    border-radius: 8px;
 }
 
 .evening button {
@@ -208,7 +216,9 @@ header nav ul li a:hover {
     background-color: #dbc7ed;
     transform: scale(1.08);
 }
-
+.evening img {
+    border-radius: 8px;
+}
 .product:hover {
     transform: scale(1.08);
 }
