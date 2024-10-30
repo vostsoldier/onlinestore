@@ -5,3 +5,6 @@ IT IS IN ORDER OF PRIORITY
 -Make a better color scheme
 -Make buttons actually work
 -Fill empty space with something and make bigger font
+
+***Important***
+Fix checkout button

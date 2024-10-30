@@ -166,23 +166,47 @@ header nav ul li a:hover {
     background-color: #F0E5D8; 
     color: #7B4B3A; 
     border: 1px solid #7B4B3A;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.oregon button:hover {
+    background-color: #ccb9a1;
+    transform: scale(1.08);
 }
 
 .misty button {
     background-color: #FFFFFF; 
     color: #4A5A63; 
     border: 1px solid #4A5A63;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.misty button:hover {
+    background-color: #d7d3d3;
+    transform: scale(1.08);
 }
 
 .sunset button {
     background-color: #FFDA8B; 
     color: #5C3B20;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.sunset button:hover {
+    background-color: #f2c76b;
+    transform: scale(1.08);
 }
 
 .evening button {
     background-color: #E8DFF0; 
     color: #4B3A57; 
     border: 1px solid #4B3A57;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.evening button:hover {
+    background-color: #dbc7ed;
+    transform: scale(1.08);
 }
 
 .product:hover {
@@ -228,9 +252,6 @@ button {
     z-index: 1;
 }
 
-button:hover {
-    background-color: #1E2A38;
-}
 .shop-button {
     transition: transform 0.3s ease;
     border-radius: 25px;
@@ -266,14 +287,14 @@ footer .social-media a:hover {
 }
 
 #cart-button:hover {
-    background-color: darkred;
-    transform: scale(1.1);
+    background-color: darkred !important;
+    transform: scale(1.1) !important;
 }
 
 .cart-dropdown {
     position: absolute;
     background-color: white;
-    color: black;
+    color: black !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-width: 300px;
     max-width: 600px;
@@ -281,12 +302,12 @@ footer .social-media a:hover {
     right: 0;
     z-index: 1;
     display: block;
-    border-radius: 8px;
+    border-radius: 8px !important;
     opacity: 0;
     visibility: hidden; 
     transform: translateY(-10px);
     pointer-events: none; 
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s !important; 
 }
 #cart-button:hover + .cart-dropdown {
     opacity: 1; 
@@ -357,6 +378,14 @@ footer .social-media a:hover {
     cursor: pointer;
     margin-top: 5px;
     display: block;
+}
+.quantity-controls button {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.quantity-controls button:hover {
+    background-color: rgb(200, 200, 200);
+    transform: scale(1.08);
 }
 .cart-item-total {
     text-align: right;
@@ -532,6 +561,7 @@ footer .social-media a:hover {
     width: 200px;
     text-align: center;
 }
+
 .sidebar {
     width: 250px; 
     padding: 20px;
@@ -574,111 +604,6 @@ footer .social-media a:hover {
 .sidebar button:hover {
     background-color: #1E2A38;
 }
-@media (max-width: 768px) {
-    body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .nav-header {
-        width: 100%;
-        padding: 10px 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .nav-header nav ul {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul li a {
-        font-size: 16px;
-        padding: 8px 12px;
-        width: 100%;
-        text-align: center;
-    }
-
-    #hero {
-        width: 100%;
-        height: auto;
-        padding: 20px 10px;
-        box-sizing: border-box;
-    }
-
-    #hero h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    #hero p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    #hero button {
-        font-size: 0.9rem;
-        padding: 10px 20px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .product-grid,
-    .seasonal-product-grid {
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-
-    .product,
-    .seasonal-product-grid .product {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .cart-dropdown {
-        width: 100%;
-        max-width: 350px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    footer {
-        width: 100%;
-        padding: 10px;
-        font-size: 0.9rem;
-        text-align: center;
-        bottom: 0;
-        position: relative; 
-        margin-top: auto;
-    }
-
-    .social-media {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .sidebar {
-        width: 100%;
-        padding: 15px 10px;
-        box-sizing: border-box;
-        margin-top: 20px;
-    }
-
-    .sidebar button {
-        font-size: 0.9rem;
-        padding: 8px;
-        width: 100%;
-    }
-}
 
 .seasonal-product-grid .product {
     border-radius: 8px;
@@ -707,8 +632,27 @@ footer .social-media a:hover {
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
+    transition: transform 0.3s ease;
 }
 
 .seasonal-product-grid .product button:hover {
     background-color: #8B3E22; 
+    transform: scale(1.08);
+}
+/* Change background color and text color for checkout button */
+.cart-dropdown .checkout-button {
+    background-color: #A64B2A; /* New background color */
+    color: #FFFFFF; /* New text color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Change color on hover */
+.cart-dropdown .checkout-button:hover {
+    background-color: #8B3E22; /* Darker color on hover */
 }
