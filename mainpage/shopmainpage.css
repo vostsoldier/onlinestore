@@ -136,7 +136,6 @@ header nav ul li a:hover {
 
 .product {
     position: relative;
-    background-color: white;
     border-radius: 8px;
     border-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -145,6 +144,45 @@ header nav ul li a:hover {
     justify-content: center;
     height: 375px;
     width: 300px;
+}
+.oregon {
+    background-color: #7B4B3A !important;
+    color: #F0E5D8; 
+}
+.misty {
+    background-color: #4A5A63 !important;
+    color: #FFFFFF; 
+}
+.sunset {
+    background-color: #F7B267 !important;
+    color: #3A2F26; 
+}
+
+.evening {
+    background-color: #4B3A57 !important;
+    color: #E8DFF0; 
+}
+.oregon button {
+    background-color: #F0E5D8; 
+    color: #7B4B3A; 
+    border: 1px solid #7B4B3A;
+}
+
+.misty button {
+    background-color: #FFFFFF; 
+    color: #4A5A63; 
+    border: 1px solid #4A5A63;
+}
+
+.sunset button {
+    background-color: #FFDA8B; 
+    color: #5C3B20;
+}
+
+.evening button {
+    background-color: #E8DFF0; 
+    color: #4B3A57; 
+    border: 1px solid #4B3A57;
 }
 
 .product:hover {
@@ -182,8 +220,6 @@ header nav ul li a:hover {
 }
 
 button {
-    background-color: #4C5B70;
-    color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -432,7 +468,7 @@ footer .social-media a:hover {
 }
 
 .seasonal-product-grid .product-description {
-    background-color: rgba(255, 165, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 0.9rem;
     padding: 10px;
@@ -497,14 +533,14 @@ footer .social-media a:hover {
     text-align: center;
 }
 .sidebar {
-    width: 250px; /* Adjust width as needed */
+    width: 250px; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed; /* or use relative for inline */
-    left: 0; /* position it on the right */
-    top: 100px; /* adjust the vertical position */
+    position: fixed; 
+    left: 0; 
+    top: 100px; 
 }
 
 .sidebar h3 {
@@ -539,7 +575,6 @@ footer .social-media a:hover {
     background-color: #1E2A38;
 }
 @media (max-width: 768px) {
-    /* Remove default margins and set full-width */
     body, html {
         margin: 0;
         padding: 0;
@@ -547,7 +582,6 @@ footer .social-media a:hover {
         overflow-x: hidden;
     }
 
-    /* Full-width header and navigation adjustments */
     .nav-header {
         width: 100%;
         padding: 10px 0;
@@ -568,7 +602,6 @@ footer .social-media a:hover {
         text-align: center;
     }
 
-    /* Hero section full-width */
     #hero {
         width: 100%;
         height: auto;
@@ -593,7 +626,6 @@ footer .social-media a:hover {
         margin: 0 auto;
     }
 
-    /* Product grid adjustments for full width */
     .product-grid,
     .seasonal-product-grid {
         width: 100%;
@@ -610,7 +642,6 @@ footer .social-media a:hover {
         margin: 0 auto;
     }
 
-    /* Cart dropdown full width */
     .cart-dropdown {
         width: 100%;
         max-width: 350px;
@@ -618,7 +649,6 @@ footer .social-media a:hover {
         box-sizing: border-box;
     }
 
-    /* Footer adjustments */
     footer {
         width: 100%;
         padding: 10px;
@@ -636,7 +666,6 @@ footer .social-media a:hover {
         gap: 5px;
     }
 
-    /* Sidebar adjustments */
     .sidebar {
         width: 100%;
         padding: 15px 10px;
@@ -649,4 +678,37 @@ footer .social-media a:hover {
         padding: 8px;
         width: 100%;
     }
+}
+
+.seasonal-product-grid .product {
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    color: #5D4037; 
+    background-color: #FFF8E7; 
+}
+
+.seasonal-product-grid .product[data-id="5"] { 
+    background-color: #FFD8A8; 
+    color: #5D3A1D; 
+}
+
+.seasonal-product-grid .product[data-id="6"] { 
+    background-color: #FFE0B2;
+    color: #4E342E;
+}
+
+.seasonal-product-grid .product button {
+    background-color: #A64B2A; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.seasonal-product-grid .product button:hover {
+    background-color: #8B3E22; 
 }

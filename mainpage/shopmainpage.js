@@ -96,5 +96,11 @@ function checkout() {
 function scrollToProducts() {
     document.getElementById("product-list").scrollIntoView({ behavior: 'smooth' });
 }
+function scrollToProducts() {
+    document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
+}
+function scrollToProducts() {
+    document.getElementById("product-list").scrollIntoView({ behavior: 'smooth' });
+}
 
 updateCart();
