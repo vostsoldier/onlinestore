@@ -18,7 +18,7 @@ function addToCart(id, name, price) {
 function updateCartWidth() {
     const cartDropdown = document.querySelector(".cart-dropdown");
     const baseWidth = 300; 
-    const widthIncrement = 150; 
+    const widthIncrement = 100; 
     const maxWidth = 900;
 
     const newWidth = Math.min(baseWidth + (uniqueProductCount * widthIncrement), maxWidth);
@@ -96,11 +96,8 @@ function checkout() {
 function scrollToProducts() {
     document.getElementById("product-list").scrollIntoView({ behavior: 'smooth' });
 }
-function scrollToProducts() {
+function scrollToAbout() {
     document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
-}
-function scrollToProducts() {
-    document.getElementById("product-list").scrollIntoView({ behavior: 'smooth' });
 }
 
 updateCart();

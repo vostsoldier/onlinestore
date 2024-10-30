@@ -61,17 +61,18 @@ header nav ul li {
     display: inline;
 }
 
-header nav ul li a {
+header nav ul li .HPAC {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    margin-top: -9px;
     padding: 8px 15px;
     background-color: #4C5B70;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
-header nav ul li a:hover {
+header nav ul li button:hover {
     background-color: #A0B0A8; 
     padding: 10px 20px; 
     text-decoration: none;
@@ -318,6 +319,10 @@ footer .social-media a:hover {
     transform: translateY(-10px);
     pointer-events: none; 
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s !important; 
+}
+#cart-button:hover {
+    opacity: 1; 
+    transform: translateY(0);
 }
 #cart-button:hover + .cart-dropdown {
     opacity: 1; 
