@@ -654,10 +654,10 @@ footer .social-media a:hover {
     background-color: #8B3E22; 
     transform: scale(1.08);
 }
-/* Change background color and text color for checkout button */
+
 .cart-dropdown .checkout-button {
-    background-color: #A64B2A; /* New background color */
-    color: #FFFFFF; /* New text color */
+    background-color: #A64B2A;
+    color: #FFFFFF; 
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -667,7 +667,6 @@ footer .social-media a:hover {
     margin-top: 10px;
 }
 
-/* Change color on hover */
 .cart-dropdown .checkout-button:hover {
-    background-color: #8B3E22; /* Darker color on hover */
+    background-color: #8B3E22; 
 }
