@@ -44,6 +44,7 @@
     text-align: center;
     width: 280px;
     position: relative;
+    align-items: center;
 }
 
 .seasonal-product-grid .product:hover {
@@ -149,9 +150,39 @@
     transform: scale(1.08);
 }
 .fall-seasonal-image {
-    width: 100%;
+    width: 65%;
     max-width: 800px;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-left: 70px;
+    margin-bottom: 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#fall-seasonal {
+    background-color: #F5E6D3;
+    padding: 40px 20px;
+    margin: 20px auto; 
+    max-width: 90%; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centering items vertically */
+    min-height: 80vh; /* Ensure the container takes up enough vertical space */
+}
+
+.fall-seasonal-content {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adjusts layout to stack vertically */
+}
+
+.seasonal-product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; /* Center items vertically within the grid */
 }
