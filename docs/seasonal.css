@@ -148,3 +148,10 @@
     background-color: #8B3E22; 
     transform: scale(1.08);
 }
+.fall-seasonal-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

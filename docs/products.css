@@ -27,6 +27,8 @@
     justify-content: center;
     height: 375px;
     width: 300px;
+    min-width: 300px;
+    min-height: 375px;
 }
 .oregon {
     background-color: #7B4B3A !important;
