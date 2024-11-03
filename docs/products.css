@@ -53,6 +53,7 @@
     border: 1px solid #7B4B3A;
     transition: transform 0.3s ease;
     border-radius: 8px;
+    font-weight: bold;
 }
 .oregon button:hover {
     background-color: #ccb9a1;
@@ -68,6 +69,7 @@
     border: 1px solid #4A5A63;
     transition: transform 0.3s ease;
     border-radius: 8px;
+    font-weight: bold;
 }
 .misty button:hover {
     background-color: #d7d3d3;
@@ -81,6 +83,7 @@
     color: #5C3B20;
     transition: transform 0.3s ease;
     border-radius: 8px;
+    font-weight: bold;
 }
 .sunset button:hover {
     background-color: #f2c76b;
@@ -96,6 +99,7 @@
     border: 1px solid #4B3A57;
     transition: transform 0.3s ease;
     border-radius: 8px;
+    font-weight: bold;
 }
 .evening button:hover {
     background-color: #dbc7ed;
@@ -145,4 +149,7 @@ button {
     margin-top: 10px;
     position: relative;
     z-index: 1;
+}
+.product-title {
+    font-size: 2rem;
 }
